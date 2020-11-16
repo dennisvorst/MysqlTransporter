@@ -1,0 +1,15 @@
+{
+  "name": "vorstd/database",
+  "description": "PHP database classes project.",
+  "license": "proprietary",
+  "autoload": {
+    "classmap": [ "src/" ],
+    "psr-0": { "\\": "src/class/" }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9"
+  },
+  "scripts": {
+    "test": "phpunit --colors=always --bootstrap ./vendor/autoload.php ./tests/Unit"
+  }
+}
