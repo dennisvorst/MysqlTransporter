@@ -66,14 +66,13 @@ try{
         echo "<h1>Tables</h1>";
         echo "<p>Processing</p>";
 
-        $sql = "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' and TABLE_SCHEMA = '{$database}'";
-        $tables = $db->select($sql);
-        echo "<table><tr><th>Column</th><th>Inserts</th><th>Updates</th></tr>";
+        $tables = $transporter->getProcessOrder($database);
 
+        echo "<table><tr><th>Column</th><th>Inserts</th><th>Updates</th></tr>";
 
         foreach ($tables as $table)
         {
-            $table = $table['TABLE_NAME'];
+//            $table = $table['table_name'];
             echo "<tr><td>{$table}</td>";
 
             if ($transporter->processInserts($database, $table))
@@ -116,7 +115,7 @@ try{
         echo "<br>";
         echo "<a href='index.php'>Restart</a><br>\n";
 
-        //$transporter->finish($database);
+        $transporter->finish($database);
 
     }
 } catch (Exception $e) {

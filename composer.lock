@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dennisvorst/MysqlDatabase.git",
-                "reference": "8cdd345df35f6e94916604fcc0779f9fccae5029"
+                "reference": "2352b5ba079b91a8a2351a411c19999e53fba0a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dennisvorst/MysqlDatabase/zipball/8cdd345df35f6e94916604fcc0779f9fccae5029",
-                "reference": "8cdd345df35f6e94916604fcc0779f9fccae5029",
+                "url": "https://api.github.com/repos/dennisvorst/MysqlDatabase/zipball/2352b5ba079b91a8a2351a411c19999e53fba0a6",
+                "reference": "2352b5ba079b91a8a2351a411c19999e53fba0a6",
                 "shasum": ""
             },
             "require-dev": {
@@ -46,7 +46,7 @@
                 "source": "https://github.com/dennisvorst/MysqlDatabase/tree/master",
                 "issues": "https://github.com/dennisvorst/MysqlDatabase/issues"
             },
-            "time": "2021-01-30T19:23:11+00:00"
+            "time": "2021-02-07T08:19:20+00:00"
         }
     ],
     "packages-dev": [
